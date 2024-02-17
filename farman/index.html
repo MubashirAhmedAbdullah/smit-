@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @font-face {
+        font-family:poopins;
+        src: url(./font/Poppins/Poppins-Regular.ttf);
+    }
+
+
+    @font-face {
+        font-family: Aldrich;
+        src: url(./font/Aldrich/Aldrich-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: Lobster;
+        src: url(./font/Lobster/Lobster-Regular.ttf);
+
+
+    }
+
+    @font-face {
+        font-family: lemon;
+        src: url(./font/Lemon/Lemon-Regular.ttf);
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-heading{
+        font-family: Aldrich;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+
+    .parent-div{
+        display: flex;
+        /* justify-content: space-evenly; */
+        /* margin: 100px; */
+
+    }
+
+    @media screen and (max-width: 830px) {
+        .parent-div{
+            flex-wrap: wrap;
+        }
+
+        .first-div{
+            width: 100%;
+        }
+        .second-div{
+            width: 100%;
+        }
+        
+    }
+
+
+    .first-div{
+        height: 500px;
+        width: 50%;
+        background-color: rgb(238, 238, 238);
+        padding: 10px;
+        border: 2px solid black;
+        
+    }
+
+    .one{
+        text-align: center;
+        font-family: poppins;
+        background-color: rgba(248, 178, 248, 0.767);
+        height: 50px;
+        width: 100%;
+        vertical-align: middle;
+        font-size: 2rem;
+    }
+
+    .two{
+        text-align: center;
+        font-family: poppins;
+        background-color: rgba(255, 186, 96, 0.767);
+        height: 50px;
+        width: 100%;
+        vertical-align: middle;
+        font-size: 2rem;
+    }
+
+
+    .child{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .left-side{
+        width: 35%;
+        height: 300px;
+        background-color: rgba(236, 194, 201, 0.884);
+        margin-top: 15px;
+        text-align: center;
+        font-family: poppins;
+        font-size: 1.50rem;
+    }
+
+    .right-side{
+        width: 60%;
+        height: 300px;
+        background-color: rgba(236, 194, 201, 0.884);
+        margin-top: 15px;
+        text-align: center;
+        font-family: poppins;
+        font-size: 1.50rem;
+    }
+
+
+    .second-div{
+        height: 500px;
+        width: 50%;
+        background-color: rgb(238, 238, 238);
+        padding: 10px;
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <div class="main-heading"> <p>What Is Sementic HTML?</p></div>
+
+    <div class="parent-div">
+        <div class="first-div">
+            <div class="one">
+                <p>div</p>
+            </div>
+            <br>
+            <div class="two">
+                span
+            </div>
+            <div class="child">
+                <div class="left-side">
+                    <br><br><br><br>
+                    div
+                </div>
+                <div class="right-side">
+                    div
+                    <div style="border: 1px solid black; height: 190px;width: 90%;margin: 10px 15px 10px 8px;">
+                        div
+                        <br>
+
+                        <p style="border: 1px solid black;
+                        height: 65px;width: 80%; margin: 10px 5px 10px 28px;">
+                            div
+                        </p>
+                        <p style="border: 1px solid black;
+                        height: 65px;width: 80%; margin: 10px 5px 10px 28px;">
+                            div
+                        </p>
+                    </div>
+
+                    <p style="border: 1px solid black; height: 35px; width: 90%;
+                    margin-right: 15px;
+                    margin-left: 8px;">
+                        div
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="one" style="margin-top: 10px;">
+                <p>div</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="second-div">
+            <div class="one" style="background-color: rgb(255, 124, 124);">
+                <p>Header</p>
+            </div>
+            <br>
+            <div class="two" style="background-color: rgb(131, 248, 131);">
+                Nav
+            </div>
+            <div class="child">
+                <div class="left-side" style="background-color: rgb(250, 217, 223);">
+                    <br><br><br><br>
+                    aside
+                </div>
+                <div class="right-side" style="background-color: rgb(199, 232, 245);">
+                    main
+                    <div style="border: 1px solid black; height: 190px;width: 90%;margin: 10px 5px 10px 8px; background-color: rgb(111, 206, 243);">
+                            article
+                        <br>
+
+                        <p style="border: 1px solid black;
+                        height: 65px;width: 80%; margin: 10px 5px 10px 28px; background-color: rgb(241, 241, 137);">
+                            figure
+                        </p>
+                        <p style="border: 1px solid black;
+                        height: 65px;width: 80%; margin: 10px 5px 10px 28px; background-color: rgb(236, 236, 149);">
+                            p
+                        </p>
+                    </div>
+
+                    <p style="border: 1px solid black; height: 35px; width: 90%;
+                    margin-right: 15px;
+                    margin-left: 8px; background-color: rgb(10, 176, 241);">
+                        section
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="one" style="margin-top: 10px;background-color: rgb(194, 37, 194);">
+                <p>footer</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
